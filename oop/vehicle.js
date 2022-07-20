@@ -44,4 +44,4 @@ class SUV extends Vehicle {
 
 module.exports = {
     Sedan, PickUp, SUV
-}
+};
