@@ -4,7 +4,8 @@
 // Abstrack 
 
 class Vehicle {
-    constructor(name, type, cc) {
+    constructor(id ,name, type, cc) {
+        this.id = id;
         this.name = name;
         this.type = type;
         this.cc = cc;
@@ -15,8 +16,8 @@ class Vehicle {
 }
 
 class Sedan extends Vehicle {
-    constructor(name, type, cc) {
-        super(name,type,cc);
+    constructor(id, name, type, cc) {
+        super(id, name, type, cc);
     }
     showName(){
         // kalau mau manggil induk function nya pakai super;
@@ -26,14 +27,14 @@ class Sedan extends Vehicle {
 }
 
 class PickUp extends Vehicle {
-    constructor(name, type, cc) {
-        super(name,type,cc);
+    constructor(id, name, type, cc) {
+        super(id, name, type, cc);
     }
 }
 
 class SUV extends Vehicle {
-    constructor(name, type, cc) {
-        super(name,type,cc);
+    constructor(id, name, type, cc) {
+        super(id, name, type, cc);
     }
 }
 
